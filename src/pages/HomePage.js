@@ -72,9 +72,11 @@ function HomePage() {
 
     return(
       <div>
-        <h1>{emp.name}</h1>
-        <h1>{emp.email}</h1>
-        <h1>{emp.DOB}</h1>
+        <ul>
+          <li>{emp.name}</li>
+          <li>{emp.email}</li>
+          <li>{emp.DOB}</li>
+        </ul>
         {/* <h1>{emp.email}</h1> */}
       </div>
     )
