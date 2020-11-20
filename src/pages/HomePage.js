@@ -7,7 +7,7 @@ import Header from "../components/Header";
 function HomePage() {
 
   const [state, setState] = useState({
-    emps: [{name: 'tom', email: 'tom@tom.com'}, {name: 'chris', email: 'chris@chris.com'},{name: 'tyler', email: 'chris@chris.com'}],
+    emps: [{name: 'tom', email: 'tom@tom.com', DOB:'01.01.1990'}, {name: 'chris', email: 'chris@chris.com', DOB:'02.16.1996'},{name: 'tyler', email: 'tyler@tyler.com', DOB:'02.02.1991'}],
     filteredEmps: []
   })
 
@@ -56,7 +56,7 @@ function HomePage() {
             <div>
               <h1>{emp.name}</h1>
               <h1>{emp.email}</h1>
-              <h1>{emp.name}</h1>
+              <h1>{emp.DOB}</h1>
               {/* <h1>{emp.email}</h1> */}
             </div>
           )
@@ -70,7 +70,7 @@ export default HomePage;
 
 //TODO LIST!
 //1. Click the name label and then re arange our state array alphabetically
-  // just how u did a on change with a heper bunction - this time on on click with a helper function
+  // just how u did a onchange with a helper bunction - this time on on click with a helper function
   // inside on on click helper you will sort the array alphabetically!! and then update the state
     // similar to hwo you did it on the filter but this time we are just sorting abc order
 

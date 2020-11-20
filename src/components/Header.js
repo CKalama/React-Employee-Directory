@@ -7,7 +7,10 @@ function Header() {
  
   return (
     <div className="App">
-        <h1>HELLO FROM HEADER!</h1>
+        <header className="header-style">
+        <h1>Employee Directory</h1>
+        <h2>Please Type in a Name to Find an Employee</h2>
+        </header>
     </div>
   );
 }
